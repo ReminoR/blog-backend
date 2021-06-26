@@ -34,7 +34,9 @@
               </div>
               <div class="blog__slide__content">
                 <h3><a href="{% url 'index' %}post/{{ post.slug }}">{{ post.title }}</a></h3>
-                <p>{{ post.published_at }}</p>
+                <p>
+                  {{ post.published_at }}
+                </p>
               </div>
             </div>
           </div>
@@ -65,7 +67,9 @@
                 </div>
                 <div class="details mt-20">
                   <h3>{{ post.title }}</h3>
-                  <p>{{ post.text|truncatechars:200 }}</p>
+                  <p>
+                    {{ post.text|truncatechars:200 }}
+                  </p>
                   <a class="button" href="{% url 'index' %}post/{{post.slug}}">Read More <i class="ti-arrow-right"></i></a>
                 </div>
               </div>
